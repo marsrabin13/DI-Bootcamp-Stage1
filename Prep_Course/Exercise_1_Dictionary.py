@@ -27,3 +27,15 @@ alpha_list = list(string.ascii_uppercase)
 for i in range(len(alpha_list)):
     dictionary4[i+1] = alpha_list[i]
 print(dictionary4)
+
+#Bonus: 
+'''Given the string "awesome sauce", return a dictionary where the keys are vowels, 
+and the values are the count of each vowel in the string. Your dictionary should look like 
+this: {'a': 2, 'e': 3, 'i': 0, 'o': 1, 'u': 1}.
+'''
+vowels = 'aeiou'
+str2= "awesome sauce"
+dictionary5 = {}
+for letter in vowels:
+    dictionary5[letter] = str2.count(letter)
+print(dictionary5)
